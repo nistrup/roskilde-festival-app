@@ -6,4 +6,4 @@ Man bruger selvfølgelig en uge på at læse op på Object-Oriented Programming 
 
 En lille app jeg lavede til min camp på Roskilde Festival 2018 til at danne hold og finde spil på en dynamisk måde.
 
-![alt text](https://i.imgur.com/FMvhDTA.png)
+![alt text](https://i.imgur.com/Y1kN8vq.png)
