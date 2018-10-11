@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ABj-hg-0hL">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hlF-VW-dyI">
+            <objects>
+                <navigationController id="ABj-hg-0hL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bab-Dy-O2X">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VEH-3M-v7X" kind="relationship" relationship="rootViewController" id="uMr-oM-I65"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btY-h1-7sg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-457" y="146"/>
+        </scene>
+        <!--🍺 Roskilde Festival 2018 ☀️-->
+        <scene sceneID="8mw-CP-h2J">
+            <objects>
+                <viewController id="VEH-3M-v7X" customClass="ViewController" customModule="Roskilde_2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j8F-6s-MIt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="1rY-Tp-pcK">
+                                <rect key="frame" x="46.5" y="220" width="227.5" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ølympiaden" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fur-UF-Ze3">
+                                        <rect key="frame" x="0.0" y="0.0" width="227.5" height="55"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIW-gt-3EE">
+                                        <rect key="frame" x="0.0" y="95" width="227.5" height="33"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Klik her for at starte">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="PGM-r0-KNa" kind="show" id="DLG-q3-8kk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1rY-Tp-pcK" firstAttribute="centerX" secondItem="j8F-6s-MIt" secondAttribute="centerX" id="Lha-gf-hFk"/>
+                            <constraint firstItem="1rY-Tp-pcK" firstAttribute="centerY" secondItem="j8F-6s-MIt" secondAttribute="centerY" id="mHf-Cp-1b2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k7T-4z-8gE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="🍺 Roskilde Festival 2018 ☀️" id="cGJ-be-QRa">
+                        <barButtonItem key="backBarButtonItem" title="Hjem" id="phg-HP-p7X"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OFc-1n-BI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285" y="143.66197183098592"/>
+        </scene>
+        <!--🔥 Der spilles 🍻-->
+        <scene sceneID="OfT-gz-qvh">
+            <objects>
+                <viewController title="🔥 Der spilles 🍻" id="iaN-WW-wtL" customClass="OutputViewController" customModule="Roskilde_2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vvc-3P-3Pv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0M-8W-2hb">
+                                <rect key="frame" x="10" y="518" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.2399441823" green="0.55726522840000003" blue="0.21266932150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oA9-8J-WzP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Lav nogle hold!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeTeams:" destination="iaN-WW-wtL" eventType="touchUpInside" id="ciA-59-7b5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIp-cy-dfh">
+                                <rect key="frame" x="10" y="470" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lXB-dF-o7g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Find en leg!"/>
+                                <connections>
+                                    <action selector="generateOutput:" destination="iaN-WW-wtL" eventType="touchUpInside" id="A2B-SP-hJF"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqG-FA-21h">
+                                <rect key="frame" x="10" y="433" width="300" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Holdstørrelse: 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bii-ap-43f">
+                                        <rect key="frame" x="0.0" y="0.0" width="206" height="29"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" wraps="YES" value="2" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="M52-ha-gK8">
+                                        <rect key="frame" x="206" y="0.0" width="94" height="29"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <connections>
+                                            <action selector="stepperValueChanged:" destination="iaN-WW-wtL" eventType="valueChanged" id="jVB-YA-Wkl"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tryk på den grønne" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ay2-a9-FGn">
+                                <rect key="frame" x="25" y="272.5" width="270" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tryk på den sorte" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7M-cm-Vj2">
+                                <rect key="frame" x="25" y="113" width="270" height="46.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zFc-4N-942" firstAttribute="trailing" secondItem="ay2-a9-FGn" secondAttribute="trailing" constant="25" id="6Qb-na-BGv"/>
+                            <constraint firstItem="C0M-8W-2hb" firstAttribute="top" secondItem="PIp-cy-dfh" secondAttribute="bottom" constant="8" symbolic="YES" id="8Rg-KR-QSE"/>
+                            <constraint firstItem="zFc-4N-942" firstAttribute="trailing" secondItem="hqG-FA-21h" secondAttribute="trailing" constant="10" id="9WF-Tr-ZSr"/>
+                            <constraint firstItem="C0M-8W-2hb" firstAttribute="leading" secondItem="PIp-cy-dfh" secondAttribute="leading" id="A3a-aS-KHw"/>
+                            <constraint firstItem="hqG-FA-21h" firstAttribute="leading" secondItem="zFc-4N-942" secondAttribute="leading" constant="10" id="AHU-wP-5Uu"/>
+                            <constraint firstItem="zFc-4N-942" firstAttribute="bottom" secondItem="C0M-8W-2hb" secondAttribute="bottom" constant="10" id="DcG-wV-1qb"/>
+                            <constraint firstItem="PIp-cy-dfh" firstAttribute="leading" secondItem="hqG-FA-21h" secondAttribute="leading" id="IgG-0L-CRc"/>
+                            <constraint firstItem="C0M-8W-2hb" firstAttribute="trailing" secondItem="PIp-cy-dfh" secondAttribute="trailing" id="MY9-IL-h7Q"/>
+                            <constraint firstItem="M7M-cm-Vj2" firstAttribute="top" secondItem="zFc-4N-942" secondAttribute="top" constant="49" id="MgE-sW-XnU"/>
+                            <constraint firstItem="M7M-cm-Vj2" firstAttribute="centerX" secondItem="vvc-3P-3Pv" secondAttribute="centerX" id="QW0-4e-t2k"/>
+                            <constraint firstItem="ay2-a9-FGn" firstAttribute="leading" secondItem="zFc-4N-942" secondAttribute="leading" constant="25" id="Tc3-O4-a1f"/>
+                            <constraint firstItem="PIp-cy-dfh" firstAttribute="top" secondItem="hqG-FA-21h" secondAttribute="bottom" constant="8" symbolic="YES" id="g34-zA-BHb"/>
+                            <constraint firstItem="ay2-a9-FGn" firstAttribute="centerY" secondItem="vvc-3P-3Pv" secondAttribute="centerY" id="nUU-Z0-c5e"/>
+                            <constraint firstItem="PIp-cy-dfh" firstAttribute="trailing" secondItem="hqG-FA-21h" secondAttribute="trailing" id="qqz-nV-snx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zFc-4N-942"/>
+                    </view>
+                    <connections>
+                        <outlet property="gameSelected" destination="M7M-cm-Vj2" id="l3o-Vk-LDs"/>
+                        <outlet property="stepper" destination="M52-ha-gK8" id="q02-7P-m3D"/>
+                        <outlet property="teamLabel" destination="ay2-a9-FGn" id="va3-7k-TyR"/>
+                        <outlet property="valueLable" destination="bii-ap-43f" id="Scx-uj-C7l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xck-m6-da4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781" y="519"/>
+        </scene>
+        <!--🤷‍♂️ Deltagere 👫-->
+        <scene sceneID="Me0-B3-B8a">
+            <objects>
+                <viewController id="PGM-r0-KNa" customClass="PlayersViewController" customModule="Roskilde_2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iH5-xf-Kap"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oty-S9-hI7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QUS-Ae-qGO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a3Z-Gl-4Sm">
+                                <rect key="frame" x="0.0" y="138" width="320" height="370"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlayerCell" id="a7K-kT-W0p" customClass="PlayerCell" customModule="Roskilde_2018" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a7K-kT-W0p" id="HHs-yx-aSP">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Po0-ke-5Ma">
+                                                    <rect key="frame" x="15" y="19.5" width="290" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69096610920000001" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Po0-ke-5Ma" firstAttribute="centerY" secondItem="HHs-yx-aSP" secondAttribute="centerY" id="JGQ-Bk-XP5"/>
+                                                <constraint firstItem="Po0-ke-5Ma" firstAttribute="trailing" secondItem="HHs-yx-aSP" secondAttribute="trailingMargin" id="Yum-X0-CvL"/>
+                                                <constraint firstItem="Po0-ke-5Ma" firstAttribute="leading" secondItem="HHs-yx-aSP" secondAttribute="leadingMargin" id="dkj-J4-30M"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="playerTitle" destination="Po0-ke-5Ma" id="h9H-ls-wjT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="PGM-r0-KNa" id="6yv-Gm-RM7"/>
+                                    <outlet property="delegate" destination="PGM-r0-KNa" id="MTl-7a-aDQ"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skriv navnet på en spiller" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ndc-tE-kiH">
+                                <rect key="frame" x="15" y="88" width="207" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Zzp-rs-4xO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbR-hT-RU0">
+                                <rect key="frame" x="10" y="518" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.2399441823" green="0.55726522840000003" blue="0.21266932150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="A6b-eH-A2j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Gem og gå til spil!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="savePlayersOnPress:" destination="PGM-r0-KNa" eventType="touchUpInside" id="p09-gc-vBq"/>
+                                    <segue destination="Rz4-in-S5X" kind="show" id="zXq-xs-8bD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QY6-sj-Mdx" customClass="YTRoundedButton" customModule="Roskilde_2018" customModuleProvider="target">
+                                <rect key="frame" x="230" y="87" width="80" height="40"/>
+                                <color key="backgroundColor" red="0.2399441823067166" green="0.55726522842639592" blue="0.21266932147315717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="IOa-J9-jER"/>
+                                    <constraint firstAttribute="height" constant="40" id="PZK-bi-LTB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Tilføj!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="PGM-r0-KNa" eventType="touchUpInside" id="Qur-Gn-GdF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WQy-vf-pOB" firstAttribute="trailing" secondItem="KbR-hT-RU0" secondAttribute="trailing" constant="10" id="03S-cp-gJn"/>
+                            <constraint firstItem="a3Z-Gl-4Sm" firstAttribute="leading" secondItem="QUS-Ae-qGO" secondAttribute="leading" id="3hJ-bJ-xe0"/>
+                            <constraint firstItem="KbR-hT-RU0" firstAttribute="top" secondItem="a3Z-Gl-4Sm" secondAttribute="bottom" constant="10" id="4Ot-bG-S8C"/>
+                            <constraint firstItem="Ndc-tE-kiH" firstAttribute="top" secondItem="iH5-xf-Kap" secondAttribute="bottom" constant="24" id="4T7-Wr-WiB"/>
+                            <constraint firstItem="a3Z-Gl-4Sm" firstAttribute="centerX" secondItem="KbR-hT-RU0" secondAttribute="centerX" id="4gE-6L-HqW"/>
+                            <constraint firstItem="Ndc-tE-kiH" firstAttribute="top" secondItem="QY6-sj-Mdx" secondAttribute="top" constant="1" id="CFl-SO-On7"/>
+                            <constraint firstItem="KbR-hT-RU0" firstAttribute="top" secondItem="a3Z-Gl-4Sm" secondAttribute="bottom" constant="10" id="G2A-bL-ypF"/>
+                            <constraint firstItem="QY6-sj-Mdx" firstAttribute="leading" secondItem="Ndc-tE-kiH" secondAttribute="trailing" constant="8" id="KLV-af-A75"/>
+                            <constraint firstItem="KbR-hT-RU0" firstAttribute="leading" secondItem="WQy-vf-pOB" secondAttribute="leading" constant="10" id="PM0-RV-sHA"/>
+                            <constraint firstItem="a3Z-Gl-4Sm" firstAttribute="top" secondItem="Ndc-tE-kiH" secondAttribute="bottom" constant="10" id="atJ-Y7-xQn"/>
+                            <constraint firstItem="Ndc-tE-kiH" firstAttribute="leading" secondItem="WQy-vf-pOB" secondAttribute="leading" constant="15" id="iFa-Gp-lev"/>
+                            <constraint firstItem="Ndc-tE-kiH" firstAttribute="bottom" secondItem="QY6-sj-Mdx" secondAttribute="bottom" constant="1" id="lMg-Y2-hb3"/>
+                            <constraint firstItem="WQy-vf-pOB" firstAttribute="trailing" secondItem="QY6-sj-Mdx" secondAttribute="trailing" constant="10" id="lxK-Fm-Ct9"/>
+                            <constraint firstItem="Oty-S9-hI7" firstAttribute="top" secondItem="KbR-hT-RU0" secondAttribute="bottom" constant="10" id="rzm-Om-O4E"/>
+                            <constraint firstAttribute="trailing" secondItem="a3Z-Gl-4Sm" secondAttribute="trailing" id="xOD-hg-c6s"/>
+                            <constraint firstItem="Oty-S9-hI7" firstAttribute="top" secondItem="KbR-hT-RU0" secondAttribute="bottom" constant="10" id="yuz-2a-h1q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WQy-vf-pOB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="🤷‍♂️ Deltagere 👫" id="1lt-8y-KBa">
+                        <barButtonItem key="backBarButtonItem" title="Tilbage" id="m2m-Vd-5dj"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addPlayerTextField" destination="Ndc-tE-kiH" id="NOR-AO-TWV"/>
+                        <outlet property="tableView" destination="a3Z-Gl-4Sm" id="DTc-Z3-mgD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kt-M3-uY3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292" y="-225"/>
+        </scene>
+        <!--⚽️ Spil 🎱-->
+        <scene sceneID="mp5-VV-jgV">
+            <objects>
+                <viewController id="Rz4-in-S5X" customClass="GamesViewController" customModule="Roskilde_2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pok-WO-m2N"/>
+                        <viewControllerLayoutGuide type="bottom" id="rtf-ev-SvX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RMZ-5B-Rik">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hXO-d0-K3D">
+                                <rect key="frame" x="0.0" y="138" width="320" height="370"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlayerCell" id="ets-d7-dc9" customClass="PlayerCell" customModule="Roskilde_2018" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ets-d7-dc9" id="95y-nH-mum">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ew-fb-Wam">
+                                                    <rect key="frame" x="15" y="19.5" width="290" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69096610920000001" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2ew-fb-Wam" firstAttribute="trailing" secondItem="95y-nH-mum" secondAttribute="trailingMargin" id="Nom-Kd-qOg"/>
+                                                <constraint firstItem="2ew-fb-Wam" firstAttribute="centerY" secondItem="95y-nH-mum" secondAttribute="centerY" id="ftb-lc-AlI"/>
+                                                <constraint firstItem="2ew-fb-Wam" firstAttribute="leading" secondItem="95y-nH-mum" secondAttribute="leadingMargin" id="tUK-ge-Wgn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="playerTitle" destination="2ew-fb-Wam" id="tYH-yS-UMi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Rz4-in-S5X" id="eNN-d9-rHQ"/>
+                                    <outlet property="delegate" destination="Rz4-in-S5X" id="2Qf-hg-qGO"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skriv titlen på et spil" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="gBb-2l-GQM">
+                                <rect key="frame" x="15" y="88" width="207" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jp9-d1-FDk"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGu-Cn-VGF">
+                                <rect key="frame" x="10" y="518" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.2399441823" green="0.55726522840000003" blue="0.21266932150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MkU-Rg-iph"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Gem og gå videre!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveGamesOnPress:" destination="Rz4-in-S5X" eventType="touchUpInside" id="obr-fr-lqX"/>
+                                    <segue destination="iaN-WW-wtL" kind="show" id="aGu-aE-fcC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E00-Gc-aKp" customClass="YTRoundedButton" customModule="Roskilde_2018" customModuleProvider="target">
+                                <rect key="frame" x="230" y="87" width="80" height="40"/>
+                                <color key="backgroundColor" red="0.2399441823" green="0.55726522840000003" blue="0.21266932150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="XSX-OV-T2b"/>
+                                    <constraint firstAttribute="height" constant="40" id="sa6-aD-3BA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Tilføj!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="Rz4-in-S5X" eventType="touchUpInside" id="XzW-2D-EFH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DVj-OA-IP0" firstAttribute="trailing" secondItem="EGu-Cn-VGF" secondAttribute="trailing" constant="10" id="1Cu-Yj-1tq"/>
+                            <constraint firstAttribute="trailing" secondItem="hXO-d0-K3D" secondAttribute="trailing" id="3ss-m8-Rr4"/>
+                            <constraint firstItem="gBb-2l-GQM" firstAttribute="leading" secondItem="DVj-OA-IP0" secondAttribute="leading" constant="15" id="87p-EM-3wn"/>
+                            <constraint firstItem="gBb-2l-GQM" firstAttribute="top" secondItem="Pok-WO-m2N" secondAttribute="bottom" constant="24" id="9Pf-Ue-PZS"/>
+                            <constraint firstItem="EGu-Cn-VGF" firstAttribute="top" secondItem="hXO-d0-K3D" secondAttribute="bottom" constant="10" id="Fsn-CL-ZE0"/>
+                            <constraint firstItem="hXO-d0-K3D" firstAttribute="leading" secondItem="RMZ-5B-Rik" secondAttribute="leading" id="H7g-Nn-pxw"/>
+                            <constraint firstItem="rtf-ev-SvX" firstAttribute="top" secondItem="EGu-Cn-VGF" secondAttribute="bottom" constant="10" id="Iwc-2C-0W2"/>
+                            <constraint firstItem="E00-Gc-aKp" firstAttribute="leading" secondItem="gBb-2l-GQM" secondAttribute="trailing" constant="8" id="VHQ-tJ-Mme"/>
+                            <constraint firstItem="gBb-2l-GQM" firstAttribute="bottom" secondItem="E00-Gc-aKp" secondAttribute="bottom" constant="1" id="VjK-bx-0Mh"/>
+                            <constraint firstItem="gBb-2l-GQM" firstAttribute="top" secondItem="E00-Gc-aKp" secondAttribute="top" constant="1" id="fU5-dD-EOu"/>
+                            <constraint firstItem="hXO-d0-K3D" firstAttribute="centerX" secondItem="EGu-Cn-VGF" secondAttribute="centerX" id="gSj-7j-agw"/>
+                            <constraint firstItem="DVj-OA-IP0" firstAttribute="trailing" secondItem="E00-Gc-aKp" secondAttribute="trailing" constant="10" id="m3g-8N-w7o"/>
+                            <constraint firstItem="EGu-Cn-VGF" firstAttribute="leading" secondItem="DVj-OA-IP0" secondAttribute="leading" constant="10" id="pYA-Xf-gNI"/>
+                            <constraint firstItem="hXO-d0-K3D" firstAttribute="top" secondItem="gBb-2l-GQM" secondAttribute="bottom" constant="10" id="sSZ-hY-7AK"/>
+                            <constraint firstItem="EGu-Cn-VGF" firstAttribute="top" secondItem="hXO-d0-K3D" secondAttribute="bottom" constant="10" id="wuu-Do-TA1"/>
+                            <constraint firstItem="rtf-ev-SvX" firstAttribute="top" secondItem="EGu-Cn-VGF" secondAttribute="bottom" constant="10" id="yfE-NS-7Mb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DVj-OA-IP0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="⚽️ Spil 🎱" id="aV5-1a-q7d">
+                        <barButtonItem key="backBarButtonItem" title="Tilbage" id="CbC-Nk-bwV"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addGameTextField" destination="gBb-2l-GQM" id="lnJ-DA-dO3"/>
+                        <outlet property="tableView" destination="hXO-d0-K3D" id="rp0-KP-VBF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6RQ-7c-HlM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2198" y="-225"/>
+        </scene>
+    </scenes>
+</document>
