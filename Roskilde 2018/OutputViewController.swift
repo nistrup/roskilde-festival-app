@@ -1,3 +1,11 @@
+//
+//  OutputViewController.swift
+//  Roskilde 2018
+//
+//  Created by Peter Nistrup on 28/06/2018.
+//  Copyright © 2018 Peter Nistrup. All rights reserved.
+//
+
 import UIKit
 
 extension Array {
